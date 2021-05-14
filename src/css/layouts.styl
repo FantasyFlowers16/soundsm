@@ -1,0 +1,102 @@
+@import '../css/quasar.variables.styl'
+
+.b-header
+  width calc(100% - 62px)
+  height 74px
+  padding 19px 83px 0 122px
+  margin-left 62px
+  position relative
+  fon-family 'Roboto'
+  display flex
+  justify-content space-between
+  &__bg
+    position absolute
+    background white
+    opacity .08
+    width 100%
+    height 100%
+    top 0
+    left 0
+  &__title-container
+    display flex
+  &__title
+    margin-right 5px
+    font 600 18px/18px "Roboto",sans-serif
+  &__title-small
+    font 600 14px/14px "Roboto",sans-serif
+    position relative
+    &::before
+      content ''
+      position absolute
+      width 100%
+      height 2px
+      top 14px
+      background $tBorder
+  &__right-block
+    display flex
+.right-block
+  &__search
+    cursor pointer
+    width 18px
+    height 18px
+    font 300 15px/15px "Roboto",sans-serif
+    background: url('../assets/img/search.svg') 50% 50% no-repeat
+    background-size cover
+    margin-right 26px
+  &__card
+    font 300 15px/21px "Roboto",sans-serif
+    cursor pointer
+    margin-right 26px
+    padding-left 28px
+    position relative
+    &::before
+      content ''
+      position absolute
+      left 0
+      top 0
+      width 21px
+      height 21px
+      background: url('../assets/img/Cart.svg') 50% 50% no-repeat
+      z-index 1
+      background-size cover
+  &__favorites
+    font 300 15px/21px "Roboto",sans-serif
+    cursor pointer
+    margin-right 26px
+    padding-left 28px
+    position relative
+    &::before
+      content ''
+      position absolute
+      left 0
+      top 0
+      width 21px
+      height 19px
+      background: url('../assets/img/Favorites.svg') 50% 50% no-repeat
+      z-index 1
+      background-size cover
+.q-layout__section--marginal
+  background none
+.q-page-container
+  display flex
+  justify-content center
+  background $bColor
+  &::before
+    content ''
+    z-index 2
+    position absolute
+    background: url('../assets/img/fon.png') 50% 100% no-repeat
+    width 100%
+    height 50%
+    background-size: cover
+    opacity .1
+    top -74px
+  &::after
+    content ''
+    position absolute
+    background: url('../assets/img/fon2.png') 50% 100% no-repeat
+    width 100%
+    height  55%
+    background-size: cover
+    opacity .1
+    bottom 0
